@@ -1,23 +1,16 @@
 const express = require('express');
 const router = express.Router();
-<<<<<<< HEAD
-const registroController = require('../controllers/registroController');
-const sesionController = require('../controllers/sesionController');
-=======
 const enviarCorreo = require('../utils/enviarCorreo');
 const pool = require('../db/connection');
 
 const registroController = require('../controllers/registroController');
 const sesionController = require('../controllers/sesionController');
 const carritoController = require('../controllers/carritoController');
->>>>>>> Nahuel
 
 router.post('/verificar-registro', registroController.verificarDatos);
 router.post('/registrar-usuario', registroController.registrarDatos);
 router.post('/iniciar-sesion', sesionController.iniciarSesion);
 router.get('/cerrar-session', sesionController.cerrarSesion);
-<<<<<<< HEAD
-=======
 
 router.post('/agregar-servicio', carritoController.agregarServicio);
 router.post('/eliminar-servicio', carritoController.eliminarServicio);
@@ -89,5 +82,4 @@ router.post('/actualizar-contrasenia', async (req, res) => {
 
 
 
->>>>>>> Nahuel
 module.exports = router;

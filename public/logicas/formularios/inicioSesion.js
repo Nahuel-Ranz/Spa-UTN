@@ -13,28 +13,11 @@ document.getElementById('formLogin').addEventListener('submit', async (e) => {
 
         if(!response.ok){
             const data = await response.json();
-<<<<<<< HEAD
-            if(data.error === 'noPerson') { mostrarError('NO EXISTE UN USUARIO CON ESE NÚMERO DE CLIENTE')}
-            else if(data.error === 'noPass') { mostrarError('CONTRASEÑA INCORRECTA')}
-=======
->>>>>>> Nahuel
             return;
         }
 
         window.location.href = response.url;
     } catch(error) {
         console.error('ERROR AL INICIAR SESION: ', error);
-<<<<<<< HEAD
-        mostrarError('ERROR AL CONECATAR CON EL SERVIDOR');
     }
 });
-
-function mostrarError(mensaje) {
-    const contenedor = document.getElementById('mensajeError');
-    contenedor.textContent = mensaje;
-    contenedor.style.display = 'block';
-}
-=======
-    }
-});
->>>>>>> Nahuel

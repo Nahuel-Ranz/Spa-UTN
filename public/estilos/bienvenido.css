@@ -11,11 +11,7 @@ body {
 }
 
 #bienvenidoAlSpa {
-<<<<<<< HEAD
-    background-color: var(--color-secundario);
-=======
     background-color: #fff;
->>>>>>> Nahuel
     width: 400px;
     padding: 2% 5%;
     align-items: center;

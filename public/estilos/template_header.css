@@ -17,13 +17,8 @@ header {
 }
 
 .headerLogo {
-<<<<<<< HEAD
-    height: 70px;
-    width: 70px;
-=======
     height: 80px;
     width: 80px;
->>>>>>> Nahuel
     border-radius: 15px;
 }
 
@@ -31,63 +26,33 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0;
-<<<<<<< HEAD
-    margin: 0;
-
-    h1, h2 { margin: 0; text-align: center;}
-=======
     padding-left: 10px;
     margin: 0;
 
     h1, h2 { margin: 5px; text-align: center;}
->>>>>>> Nahuel
     h1 { font-size: 35px}
     h2 { font-size: 25px;}
 }
 
 .headerNav {
-<<<<<<< HEAD
-=======
     background-color: var(--color-secundario);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
->>>>>>> Nahuel
     display: flex;
     background: none;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-    padding: 0;
-=======
     padding: 10px;
->>>>>>> Nahuel
     gap: 20px;
 
     a {
         margin: 0;
-<<<<<<< HEAD
-=======
         color: white;
->>>>>>> Nahuel
         text-decoration: none;
         font-size: 16px;
         font-weight: 600;
         transition: color 0.3s;
     }
-<<<<<<< HEAD
-}
-
-#sesion {
-    display: flex;
-    flex-direction: column;
-}
-
-#opciones-usuario {
-    background-color: transparent;
-
-    option {
-        background-color: blue;
-=======
 
     a:hover { color: var(--color-texto)}
 }
@@ -126,6 +91,5 @@ header {
         flex-direction: column;
         gap: 5px;
         z-index: 15;
->>>>>>> Nahuel
     }
 }

@@ -1,31 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spa Sentirse Bien</title>
-  <link rel="stylesheet" href="./estilos/estilos_de_paginas.css" />
-  <link rel="icon" href="./media/imagenes/icono.ico"/>
-</head>
-
-<body>
-  <%- include("../../../templates/header.ejs"); %>
-  
-=======
 <%- include("../../../templates/headTag.ejs", {title: 'Spa'}); %>
 <body>
   <%- include("../../../templates/header.ejs"); %>
->>>>>>> Nahuel
 
   <div class="fondo-transparente parallax">
     <div class="overlay"></div>
     <div class="contenido">
-<<<<<<< HEAD
       <h2>Sentirse Bien</h2>
-=======
-      <h2>Sentirse Bien CLIENTE</h2>
->>>>>>> Nahuel
       
     </div>
   </div>
@@ -63,31 +45,12 @@
         <div class="metodo-pago">
           <h4>Efectivo</h4>
           <p>
-<<<<<<< HEAD
-            Disfrutá de un <strong>10% de descuento</strong> abonando en efectivo. ¡Tu bienestar, con un beneficio extra!
-=======
                ¡Pagá de la manera más práctica! <strong>¡Tu pago en efectivo agiliza tu atención y te permite disfrutar más rápido de nuestros servicios!</strong>
->>>>>>> Nahuel
           </p>
         </div>
         <div class="metodo-pago">
           <h4>Tarjetas de Débito</h4>
           <p>
-<<<<<<< HEAD
-            Aceptamos todas las tarjetas de débito. ¡Pagá de la manera más práctica!
-          </p>
-        </div>
-        <div class="metodo-pago">
-          <h4>Tarjetas de Crédito</h4>
-          <p>
-            Los <strong>viernes y sábados</strong>, aprovechá nuestra promoción especial:
-            <strong>6 cuotas sin interés</strong> con tu tarjeta de crédito. ¡Date ese gusto que merecés!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-=======
              Disfrutá de un <strong>15% de descuento</strong>, aceptamos todas las tarjetas de débito. ¡Tu bienestar, con un beneficio extra!
           </p>
         </div>
@@ -101,7 +64,6 @@
       </div>
     </div>
   </section>
->>>>>>> Nahuel
   
 
  <section class="seccion-testimonios">
@@ -125,46 +87,6 @@
   </div>
 </section>
 
-<<<<<<< HEAD
-  <div id="formModal">
-    <div class="modal-content">
-      <h2>Tenés dudas?</h2>
-      <h3>Dejanos tu información y nos comunicamos con vos!</h3>
-      <form id="formulario-consulta">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="telefono">Teléfono:</label> 
-        <input type="tel" id="telefono" name="telefono" required />
-
-        <label for="fecha">Consulta:</label>
-        <input type="text" id="consulta" name="consulta" required />
-
-
-        <button type="submit" class="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
-
-  <button class="floating-button" onclick="abrirFormulario()">+</button>
-  <section class="seccion-llamada-accion" style="text-align: center; padding: 40px 20px; background-color: #fbe8f2;">
-    <h2 style="font-size: 2em; color: #333;">¿Qué estás esperando para vivir una experiencia única?</h2>
-    <p style="font-size: 1.2em; max-width: 600px; margin: auto;">Dejate cuidar por nuestros profesionales y regalate un momento de bienestar pensado exclusivamente para vos.</p>
-    <button class="boton-reservar" onclick="window.location.href='/pagina_cliente_servicios-individuales'">Reservar servicio</button>
-  </section>
-  
-  <%- include("../../../templates/footer.ejs"); %>
-
-  <script>
-    history.pushState(null, null, location.href);
-    window.onpopstate = function () {
-      history.go(1);
-    };
-  </script>
-=======
   <section class="seccion-contacto animacion-scroll" id="contacto" style="padding: 50px 20px; background-color: #f8fbfc;">
   <div style="max-width: 600px; margin: auto;">
     <h2 style="text-align: center; color: var(--color-texto);">Contacto</h2>
@@ -209,7 +131,6 @@
     }, 4000);
   });
 </script>
->>>>>>> Nahuel
 
   <script>
     function mostrarPrecio() {
@@ -218,13 +139,6 @@
       document.getElementById("precio").value = "$" + precio;
     }
 
-<<<<<<< HEAD
-    function abrirFormulario() {
-      document.getElementById("formModal").style.display = "flex";
-    }
-
-=======
->>>>>>> Nahuel
     // Cerrar con Esc
     document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
@@ -276,25 +190,5 @@
   });
 </script>
 
-<script>/*
-  const tipoSelect = document.getElementById('tipo-servicio');
-  const individualLabel = document.getElementById('label-servicio-individual');
-  const grupalLabel = document.getElementById('label-servicio-grupal');
-
-  tipoSelect.addEventListener('change', function () {
-    if (this.value === 'individuales') {
-      individualLabel.style.display = 'block';
-      grupalLabel.style.display = 'none';
-    } else if (this.value === 'grupales') {
-      grupalLabel.style.display = 'block';
-      individualLabel.style.display = 'none';
-    } else {
-      individualLabel.style.display = 'none';
-      grupalLabel.style.display = 'none';
-    }
-  });*/
-</script>
-
-  
 </body>
 </html>

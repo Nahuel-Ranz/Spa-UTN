@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-:root {
-  --color-primario: #a51f6f;
-  --color-secundario: #b3558d;
-  --color-floating: #b3558dd7;
-  --color-fondo: #f8fbfc;
-  --color-texto: #333;
-  --color-texto-secundario: #666;
-  --fuente-principal: 'Segoe UI', sans-serif;
-  --color-acento: #d4a373;
-  --color-lujo: #c0b283;
-}
-
-=======
->>>>>>> Nahuel
 * {
     box-sizing: border-box;
     margin: 5px;
@@ -45,11 +30,7 @@ body {
     background-color:pink;
     box-shadow: inset 0 0 20px #FFF;
     border-radius: 15px;
-<<<<<<< HEAD
-    width: 550px;
-=======
     width: 650px;
->>>>>>> Nahuel
     margin: 30px auto;
     padding: 20px;
     display: flex;
@@ -64,10 +45,7 @@ img {
 
 h2 {
     text-align: center;
-<<<<<<< HEAD
-=======
     color: var(--color-texto);
->>>>>>> Nahuel
     font-size: 2.5em;
     padding: 10px 0;
 }
@@ -80,10 +58,7 @@ label {
     margin-bottom: 0;
     margin-left: 0;
     cursor: pointer;
-<<<<<<< HEAD
-=======
     color: var(#383737);
->>>>>>> Nahuel
 }
 
 input {

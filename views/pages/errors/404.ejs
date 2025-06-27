@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página no encontrada</title>
-  <link href="/estilos/globalVariables.css" rel="stylesheet" />
-  <link href="/estilos/estilos_de_paginas.css" rel="stylesheet" />
-  <link rel="icon" href="/media/imagenes/icono.ico" />
-</head>
-=======
 <%- include("../../templates/headTag.ejs") %>
->>>>>>> Nahuel
 
 <body>
   <%- include("../../templates/header.ejs") %>
 
-<<<<<<< HEAD
-  <main class="pagina-error flexColumn">
-    <h1 class="error-404">404</h1>
-=======
   <main class="pagina-error formulario flexColumn">
     <h2 class="error-404">404</h2>
->>>>>>> Nahuel
     <h2>Página no encontrada</h2>
     <p>Lo sentimos, la página que estás buscando no existe o ha sido movida.</p>
     
@@ -33,24 +17,10 @@
         <a href="/profesional" class="boton-volver">Volver al Inicio del Profesional</a>
       <% } else if(usuario.usuarioTipo === 'admin') { %>
         <a href="/admin" class="boton-volver">Volver al Inicio de Administración</a>
-<<<<<<< HEAD
-      <% } else { %>
-        <a href="/" class="boton-volver">Volver al Inicio</a>
-=======
->>>>>>> Nahuel
       <% } %>
     <% } else { %>
       <a href="/" class="boton-volver">Volver al Inicio</a>
     <% } %>
-<<<<<<< HEAD
-    
-    <a href="/" class="boton-volver">Volver al inicio</a>
-
-
-
-
-=======
->>>>>>> Nahuel
   </main>
 
   <%- include("../../templates/footer.ejs") %>

@@ -1,20 +1,3 @@
-:root {
-  --color-primario: #a51f6f;
-  --color-secundario: #b3558d;
-  --color-floating: #b3558dd7;
-  --color-fondo: #f8fbfc;
-  --color-texto: #333;
-  --color-texto-secundario: #666;
-  --fuente-principal: 'Segoe UI', sans-serif;
-<<<<<<< HEAD
-  --color-acento: #d4a373;
-  --color-lujo: #c0b283;
-=======
-  --color-acento: #4CAF50; 
-  --color-lujo: #2e7d32;
->>>>>>> Nahuel
-}
-
 body {
   font-family: var(--fuente-principal);
   margin: 0;
@@ -123,35 +106,7 @@ section {
   width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-/*
-input,
-select,
-button.submit {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-*/
-/*
-button.submit {
-  background-color: #b3558d;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-button.submit:hover {
-  background-color: #b3558dd7;
-  transform: scale(1.03);
-}
-*/
 footer {
   background-color: #a51f6f;
   color: #fff;
@@ -159,7 +114,6 @@ footer {
   padding: 40px 20px 20px;
   margin-top: 40px;
   font-size: 16px;
-  /*background: #a8d8e8;*/
 }
 
 .direccion-visitanos {
