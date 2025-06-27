@@ -25,18 +25,12 @@ router.post('/registrar-turno', async (req, res) => {
     const { servicio, fecha, hora, empleadoID } = req.body;
     const clienteID = req.session.usuario.id;
 
-    // Obtener la sala libre para ese servicio, fecha, hora
-    const [sala] = await poolConnection.query('CALL obtenerSalaLibre(?, ?, ?, ?)', [servicio, fecha, hora, empleadoID]);
-
-    if (!sala[0] || !sala[0][0]) {
-      return res.json({ exito: false, mensaje: 'No hay salas disponibles para ese horario.' });
-    }
-
-    const salaID = sala[0][0].id;
+    const salaID = Math.floor(Math.random() * 4) + 1;
 
     await pool.query('CALL almacenarTurno(?, ?, ?, ?, ?, ?)', [servicio, fecha, hora, empleadoID, salaID, clienteID]);
 
     res.json({ exito: true, mensaje: 'Turno registrado con éxito.' });
+    
   } catch (err) {
     console.error(err);
     res.json({ exito: false, mensaje: 'Error al registrar el turno.' });
