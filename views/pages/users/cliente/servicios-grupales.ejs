@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include("../../../templates/headTag.ejs", {title: 'Servicios Grupales'}); %>
+    <body>
+        <%- include('../../../templates/header.ejs') %>
+
+        <main style="padding: 30px;">
+            <h2 class="titulo-seccion">Servicios Grupales</h2>
+            <section>
+                <div class="servicios-grid">
+                    <% resultados.forEach( servicio => { %>
+                        <%- include("../../../templates/servicios/servicioCard.ejs", { servicio, grupo: 'g' }); %>
+                    <% }); %>
+                </div>
+            </section>
+        </main>
+
+        <%- include('../../../templates/servicios/modalServicios.ejs'); %>
+        <%- include('../../../templates/servicios/carrito.ejs'); %>
+
+        <script src="/logicas/paginas/servicios.js"></script>
+        <%- include('../../../templates/footer.ejs') %>
+    </body>
+</html>

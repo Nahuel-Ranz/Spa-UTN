@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../../../../templates/headTag.ejs", {title: 'Nueva Contraseña'}); %>
+<body class="flexColumn">
+    <%- include("../../../../templates/header.ejs"); %>
+
+    <form action="/actualizar-contrasenia" class="formulario flexColumn" method="post">
+        <img src="/media/imagenes/logo-sentirse-bien.png" alt="Logo_SPA">
+        <h2>Ingrese su nueva contraseña</h2>
+
+        <label>Escriba la nueva contraseña</label>
+        <input type="password" name="nuevaContrasenia" required placeholder="Nueva contraseña">
+
+        <label>Repita la nueva contraseña</label>
+        <input type="password" name="confirmarContrasenia" required placeholder="Confirmar contraseña">
+
+        <div id="botones" class="flexRow">
+            <button type="submit" class="submit">Actualizar</button>
+        </div>
+    </form>
+
+    <%- include("../../../../templates/footer.ejs"); %>
+</body>
+</html>

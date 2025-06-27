@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../../../../templates/headTag.ejs", {title: 'Iniciar Sesión'}); %>
+<body>
+  <%- include("../../../../templates/header.ejs"); %>
+          <h2>Solicitar un Turno</h2>
+
+          <form id="form-turno" class="formulario flexColumn">
+            <label for="servicio">Servicio:</label>
+            <select id="servicio" name="servicio" required></select>
+
+            <label for="fecha">Fecha:</label>
+            <select id="fecha" name="fecha" required></select>
+
+            <label for="hora">Hora:</label>
+            <select id="hora" name="hora" required></select>
+
+            <label for="empleado">Profesional:</label>
+            <select id="empleado" name="empleado" required></select>
+            <div id="botones" style="display: flex;">
+              <button type="submit">Reservar Turno</button>
+            </div>
+          </form>
+          <script src="/logicas/formularios/turnos.js"></script>
+
+        <%- include('../../../../templates/footer') %>  
+    </body>
+</html>

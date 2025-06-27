@@ -1,0 +1,88 @@
+<<<<<<< HEAD
+=======
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<div class="chatbot-fab" id="chatbotFab">
+  <i class="fas fa-comments"></i> </div>
+
+<div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-header">
+        <span>Asistente de Sentirse Bien</span>
+        <button class="chatbot-close-btn" id="chatbotCloseBtn">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message">¡Hola!😊 Soy Valeria, tu asistente virtual de Sentirse Bien. ¿En qué puedo ayudarte hoy? Puedes preguntar sobre nuestros servicios, precios o cómo contactarnos.</div>
+    </div>
+    <div class="chatbot-input-container">
+        <input type="text" id="chatbotInput" placeholder="Escribe tu pregunta...">
+        <button id="chatbotSendBtn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="/logicas/chatbot.js"></script>
+
+
+
+
+>>>>>>> Nahuel
+<link rel="stylesheet" href="/estilos/template_footer.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+<footer>
+	<div class="footer-content">
+		<div class="contacto">
+			<p><strong>📧 Email:</strong> info@sentirsebien.com</p>
+			<p><strong>📞 Tel:</strong> (362) 456-7890</p>
+		</div>
+		<div class="direccion-visitanos">
+			<p><strong>📍 Dirección:</strong> French 414, Resistencia</p>
+		</div>
+		<div class="redes-sociales">
+			<a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+			<a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+			<a href="https://wa.me/5491234567890" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" /></a>
+		</div>
+		<div 
+			id="map"
+			style="
+				height: 250px;
+				width: 60%;
+				border-radius: 10px;
+				box-shadow: 1px 1px 20px var(--color-secundario);
+			"
+		></div>
+	</div>
+	<div class="footer-bottom">
+		<p>&copy; 2025 Spa Sentirse Bien - Todos los derechos reservados</p>
+		<p>Desarrollado por Grupo 9 - 'ProcAp' para la materia Metodología de Sistemas I</p>
+	</div>
+</footer>
+
+<<<<<<< HEAD
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const map = L.map('map').setView([-27.4514, -58.9862], 16); // Coordenadas de French 414, Resistencia
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([-27.4514, -58.9862]).addTo(map)
+      .bindPopup('📍 Spa Sentirse Bien<br>French 414, Resistencia')
+      .openPopup();
+  });
+=======
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const map = L.map('map').setView([-27.45091, -58.97909], 16); // ¡ACTUALIZA ESTAS COORDENADAS!
+		
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+		L.marker([-27.45091, -58.97909]).addTo(map) // ¡Y TAMBIÉN ESTAS COORDENADAS!
+			.bindPopup('📍 Spa Sentirse Bien<br>French 414, Resistencia')
+			.openPopup();
+	});
+>>>>>>> Nahuel
+</script>

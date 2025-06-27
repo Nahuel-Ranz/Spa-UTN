@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include("../../../templates/headTag.ejs", {title: 'Servicios Individuales'}); %>
+    <body>
+        <%- include('../../../templates/header.ejs') %>
+
+        <main style="padding: 30px;">
+            <h2 class="titulo-seccion">Servicios Individuales</h2>
+            <%- include('../../../templates/servicios/servicios.ejs', { resultados, tratamientos }) %>
+        </main>
+
+        <%- include('../../../templates/servicios/modalServicios.ejs'); %>
+        <%- include('../../../templates/servicios/carrito.ejs'); %>
+
+        <script src="./logicas/paginas/servicios.js"></script>
+        <%- include('../../../templates/footer.ejs'); %>
+    </body>
+</html>

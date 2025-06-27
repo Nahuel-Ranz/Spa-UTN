@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../../../../templates/headTag.ejs", {title: 'Recuperar mi Contraseña'}); %>
+<body class="flexColumn">
+  <%- include("../../../../templates/header.ejs"); %>
+
+  <form action="/recuperar-contrasenia" id="recuperarClave" class="formulario flexColumn" method="post">
+    <img src="/media/imagenes/logo-sentirse-bien.png" alt="Logo_SPA">
+    <h2>Recuperar mi contraseña</h2>
+
+    <label>Para recuperar su contraseña, ingrese el mail con el que se ha registrado</label>
+    <input type="email" name="correo" required placeholder="usuario@mail.com" />
+
+    <div id="botones" class="flexRow">
+      <button type="submit" class="submit">Enviar</button>
+    </div>
+  </form>
+
+  <%- include("../../../../templates/footer.ejs"); %>
+</body>
+</html>
