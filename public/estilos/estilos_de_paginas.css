@@ -1,9 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 3px;
+}
+
+html { padding: 0; margin: 0;}
+
 body {
-  font-family: var(--fuente-principal);
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-fondo);
-  color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 0;
 }
 
 section {
@@ -27,74 +37,9 @@ section {
   margin-top: 20px;
   line-height: 1.6;
   font-weight: bolder;
-  background-image: url(../../img/fondo-prueba.jpg);
+  background-image: url(/media/imagenes/fondo-prueba.jpg);
   margin: 40px auto;
   max-width: 700px;
-}
-
-/* Botón flotante de contacto */
-.floating-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--color-acento); /* Beige cálido */
-  color: white;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  font-size: 2rem;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
-}
-
-.floating-button:hover {
-  background-color: var(--color-lujo); /* Dorado suave al hacer hover */
-  transform: scale(1.05);
-}
-#formModal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  z-index: 1001;
-}
-
-#formModal .modal-content {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 400px;
-  width: 90%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  background-color: #a51f6f;
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px 20px;
-  margin-top: 40px;
-  font-size: 16px;
-}
-
-.direccion-visitanos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 16px;
-  margin-top: 10px;
 }
 
 .map-container {
@@ -169,37 +114,6 @@ button.submit {
 button.submit:hover {
   background-color: var(--color-lujo); /* marron suave al hacer hover */
   transform: scale(1.03);
-}
-
-/* boton flotante + */
-.floating-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  /* background-color: #84c5d0;*/
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 2rem;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Modal modernizado */
-#formModal .modal-content {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  max-width: 420px;
-  width: 90%;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 #servicios-individuales,
@@ -413,8 +327,8 @@ button.submit:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
   padding: 2rem;
+  z-index: -1;
 }
 
 .parallax {
@@ -460,9 +374,6 @@ button.submit:hover {
 .contenido p {
   color: rgb(255, 255, 255);
   text-shadow: #1f0118;
-}
-
-.contenido p {
   text-align: center;
 }
 
@@ -724,12 +635,16 @@ button.submit:hover {
 }
 .flexRow {
     display: flex;
-    justify-content: center; /* ¡CAMBIA ESTO! Centra los ítems y permite que 'gap' los separe */
+    justify-content: center;
     align-items: center;
     gap: 20px; 
     padding: 10px;
 }
 
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
 
 #botones .submit { /* Apunta específicamente a los botones dentro del div#botones */
     flex-shrink: 0; /* Evita que los botones se encojan */
@@ -758,10 +673,6 @@ button.submit:hover {
   background-color: var(--color-lujo);
 }
 
-.flexColumn {
-  display: flex;
-  flex-direction: column;
-}
 .seccion-metodos-pago {
   background-color: #f8fbfc;
   padding: 50px 20px;
@@ -1127,13 +1038,6 @@ button.submit:hover {
   background-repeat: no-repeat;
   filter: brightness(0.6); /* Opcional para oscurecer un poco */
   z-index: -2;
-}
-
-/* Asegurar contenido visible por encima */
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 main, header {

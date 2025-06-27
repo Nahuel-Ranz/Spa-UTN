@@ -7,6 +7,7 @@ header {
     background-color: var(--color-primario);
     width: 100%;
     box-sizing: border-box;
+    height: 170px;
 }
 
 .logo_titles {
@@ -17,8 +18,8 @@ header {
 }
 
 .headerLogo {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
     border-radius: 15px;
 }
 
@@ -31,7 +32,10 @@ header {
 
     h1, h2 { margin: 5px; text-align: center;}
     h1 { font-size: 35px}
-    h2 { font-size: 25px;}
+    h2 {
+        font-size: 25px;
+        color: white;
+    }
 }
 
 .headerNav {
@@ -60,6 +64,7 @@ header {
 #dropdown {
     position: relative;
     display: inline-block;
+    z-index: 1;
 
     .dropdown-toggle {
         background-color: var(--color-primario);
@@ -73,7 +78,7 @@ header {
     }
     
     .dropdown-toggle:hover { color: var(--color-texto)}
-
+    
     .dropdown-menu {
         display: none;
         position: absolute;
@@ -84,12 +89,13 @@ header {
         margin-top: 6px;
         padding: 6px;
         width: 140px;
+        z-index: 2;
     }
 
     .dropdown-menu.show {
         display: flex;
+        position: absolute;
         flex-direction: column;
-        gap: 5px;
         z-index: 15;
     }
 }

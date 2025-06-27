@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       empleados.forEach(e => {
         const option = document.createElement('option');
         option.value = e.id;
-        option.textContent = e.nombreCompleto;
+        option.textContent = e.nombre + ', ' + e.apellido;
         empleadoSelect.appendChild(option);
       });
     }
